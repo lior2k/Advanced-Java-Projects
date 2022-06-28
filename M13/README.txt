@@ -5,4 +5,4 @@ If you have javafx path saved to different name - switch 'JAVA_FX' to the name o
 If you dont have javafx saved to a variable at all - switch '%JAVA_FX%' to your javafx library path,
 such as 'C:\Users\nir\javafx-sdk-18\lib'.
 
-To sum up, open bat file as text file and switch to the appropriate javafx path.
+Tl;dr, open bat file as text file and switch to the appropriate javafx path.
