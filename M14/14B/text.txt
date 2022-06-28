@@ -1,0 +1,3 @@
+ecstasy:hallucinations drug
+lsd:hallucinations drug
+qed:quantom entanglement device

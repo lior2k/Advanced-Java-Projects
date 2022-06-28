@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="1.0" layoutY="75.0" prefHeight="25.0" prefWidth="170.0">
+         <children>
+            <TextField fx:id="term_to_search" onKeyTyped="#onSearchCharEnteredOrDeleted" prefHeight="25.0" prefWidth="148.0" promptText="search term" />
+            <Button mnemonicParsing="false" onAction="#onSearchButtonClicked" prefHeight="25.0" prefWidth="82.0" text="Search" />
+         </children>
+      </HBox>
+      <HBox layoutY="50.0" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="term_to_update" prefHeight="25.0" prefWidth="109.0" promptText="term" />
+            <TextField fx:id="translation_to_update" prefHeight="25.0" prefWidth="442.0" promptText="meaning" />
+            <Button mnemonicParsing="false" onAction="#onUpdateButtonClicked" prefHeight="25.0" prefWidth="61.0" text="Update" />
+         </children>
+      </HBox>
+      <HBox layoutX="1.0" layoutY="25.0" prefHeight="25.0" prefWidth="598.0">
+         <children>
+            <TextField fx:id="term_to_add" prefHeight="25.0" prefWidth="104.0" promptText="term" />
+            <TextField fx:id="translation_to_add" prefHeight="25.0" prefWidth="438.0" promptText="meaning" />
+            <Button mnemonicParsing="false" onAction="#onAddButtonClicked" prefHeight="25.0" prefWidth="57.0" text="Add" />
+         </children>
+      </HBox>
+      <HBox layoutX="171.0" layoutY="75.0" prefHeight="25.0" prefWidth="430.0">
+         <children>
+            <TextField fx:id="term_to_delete" prefHeight="25.0" prefWidth="412.0" promptText="delete term" />
+            <Button mnemonicParsing="false" onAction="#onDeleteButtonClicked" prefHeight="25.0" prefWidth="99.0" text="Delete" />
+         </children>
+      </HBox>
+      <HBox layoutX="1.0" layoutY="2.0" prefHeight="25.0" prefWidth="272.0">
+         <children>
+            <TextField fx:id="save_as" prefHeight="25.0" prefWidth="232.0" promptText="file name" />
+            <Button mnemonicParsing="false" onAction="#onSaveButtonClicked" text="Save" />
+         </children>
+      </HBox>
+      <HBox layoutX="273.0" layoutY="2.0" prefHeight="25.0" prefWidth="327.0">
+         <children>
+            <TextField fx:id="load" prefHeight="25.0" prefWidth="285.0" promptText="file name" />
+            <Button mnemonicParsing="false" onAction="#onLoadButtonClicked" text="Load" />
+         </children>
+      </HBox>
+      <TextArea fx:id="search_item" editable="false" layoutX="1.0" layoutY="100.0" prefHeight="301.0" prefWidth="170.0" promptText="search results..." wrapText="true" />
+      <TextArea fx:id="dictionary_items" editable="false" layoutX="171.0" layoutY="100.0" prefHeight="301.0" prefWidth="430.0" promptText="dictionary items..." wrapText="true" />
+   </children>
+</Pane>
